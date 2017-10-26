@@ -1,0 +1,58 @@
+body {
+  background:
+    linear-gradient(black, pink, white, pink, black);
+
+  text-align: center;
+
+}
+
+h1 {
+  color: white;
+  margin-top: 3em;
+}
+
+img {
+  margin: 3em;
+  width: 20em;
+  border-radius: 50%;
+  box-shadow: 0 0 2em 0.5em white;
+  animation: fuzzy 5s ease-in 7s 1 normal both running;
+}
+ /*img:hover {
+   box-shadow: 0 0 4em 2em purple;
+ }*/
+.tribble {
+  animation: tribble 5s ease-in 2s 1 normal both running;
+}
+/*
+.tribble:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 8em 2em gold, 0 0 8em 2em gold inset;
+}*/
+
+@keyframes tribble {
+  0% {border-radius: 0%;
+    box-shadow: 0 0 0 0 0 0}
+  50% {border-radius: 25%;
+    box-shadow: 0 0 8em 2em gold, 0 0 8em 2em gold inset;}
+  100% {border-radius: 50%;
+    box-shadow: 0 0 0 0 0 0;}
+}
+
+@keyframes  fuzzy {
+  0% {box-shadow: 0 0 0 0 0 0;}
+  50% {box-shadow: 0 0 4em 2em purple;}
+  100% {box-shadow: 0 0 0 0 0 0;}
+}
+ul {
+  list-style-position: inside;
+}
+
+ol {
+  list-style-position: inside;
+}
+a {
+  text-decoration: none;
+  color: pink;
+  font-size: 2em;
+}
